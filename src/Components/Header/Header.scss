@@ -1,0 +1,98 @@
+.header {
+  height: 6.5rem;
+  box-shadow: 0 2px 4px 0 rgba($color: #000000, $alpha: 0.1);
+}
+
+.wrap {
+  position: relative;
+  height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+
+  .logo {
+    justify-content: flex-start;
+    width: 13rem;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    .logo-link {
+      display: flex;
+      flex-direction: row;
+    }
+
+    img {
+      display: block;
+      width: 175%;
+      margin: 0;
+      opacity: 1;
+      height: 6.5rem;
+    }
+  }
+  .search-input {
+    border: 1px solid rgba($color: #000000, $alpha: 0.25);
+    width: 400px;
+    position: relative;
+    top: 0%;
+    border-radius: 5px;
+
+    span {
+      position: absolute;
+      top: 20%;
+      font-size: 25px;
+      margin-left: 10px;
+    }
+    input[type="text"] {
+      height: 40px;
+      margin-left: 40px;
+      border: none;
+      width: 300px;
+      font-size: 1.8rem;
+    }
+    input[type="text"]:focus {
+      border: none;
+      outline: none;
+    }
+  }
+  .search-input:hover {
+    box-shadow: 0 0px 8px 0 rgba($color: #000000, $alpha: 0.3);
+  }
+  .cart-logo {
+    font-size: 25px;
+    padding: 40px;
+  }
+  .user-logo {
+    font-size: 25px;
+    padding: 40px;
+  }
+  .glob-logo {
+    font-size: 25px;
+    padding: 40px;
+  }
+  .user-signin {
+    padding-right: 40px;
+    span {
+      color: var(--header-font-color);
+    }
+  }
+}
+
+// input[type=text]{
+//     width: 300px;
+//     height: 35px;
+//     border-radius: 5px;
+//     padding-right: 40px;
+//     cursor: pointer;
+// }
+// input[type=text]:hover{
+//     width: 300px;
+//     height: 35px;
+//     border-radius: 5px;
+// }
