@@ -8,6 +8,7 @@ import Shoppage from "./components/pages/shoppage/shoppage";
 import Signin from "./components/pages/sign-in/signin";
 import Signup from "./components/pages/sign-up/signup";
 import Checkout from "./components/pages/checkoutpage/checkout";
+import Thankyou from "./components/pages/thankyoupage/Thankyou";
 import Profile from "./components/pages/profile/profile";
 import Footer from "./components/footer/footer";
 import Errorboundary from "./components/ErrorBoundary";
@@ -49,9 +50,12 @@ const App = ({ checkUserAsync, currentUser, setCartItemsFromLocalStorage }) => {
 
           <Route path="/shop" component={Shoppage} />
           <Route path="/faq" component={HomePage} />
+          <Route  path="/thq"  component={Thankyou} />
           <Route path="/contact" component={HomePage} />
           <Route exact path="/" component={HomePage} />
           <Route path="/" render={throwError} />
+          
+            
         </Switch>
       </Errorboundary>
       <Footer />

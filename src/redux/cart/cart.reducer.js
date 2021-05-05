@@ -33,7 +33,7 @@ const cartReducer = (state = INITIAL_STATE, action) => {
         cartItems: newCartItems
       };
     case cartActionTypes.CLEAR_CART:
-      localStorage.setItem("cartItems", JSON.stringify(newCartItems));
+      localStorage.setItem("cartItems", JSON.stringify([]));
       return {
         ...state,
         cartItems: newCartItems
@@ -84,3 +84,5 @@ const cartDecreaseCountHelper = (cartItems, itemToBeDecreased) => {
       : item
   );
 };
+
+

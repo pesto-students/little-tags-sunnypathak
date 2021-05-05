@@ -1,0 +1,31 @@
+.thanks{
+    min-height: 600px;
+    min-width: 600px;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+#btn{
+    // margin-top:300px;
+    height: 50px;
+    width: 300px;
+    // background-color:#448df0;
+    color:white;
+    background-color: black;
+    font-size: 20px;
+    border-radius: 5px;
+    outline: thin;
+}
+
+.tgirl{
+    img{
+        margin-top:130px;
+        height: 400px;
+        width: 200px;
+        object-fit: cover;
+        
+    }
+    
+}

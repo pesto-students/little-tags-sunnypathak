@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
-import { withRouter } from "react-router-dom";
+import { withRouter ,useHistory} from "react-router-dom";
+
 
 // Action Creator Import
 import {
@@ -17,6 +18,7 @@ import StripeLogo from "../../../assets/logo/logo1.jpeg";
 import "./checkout.scss";
 
 const CheckoutPage = props => {
+  const redirect = useHistory();
   const {
     cartItems,
     cartTotal,
@@ -28,7 +30,9 @@ const CheckoutPage = props => {
 
   const onToken = token => {
     // console.log("Payment Token for charges", token);
-    alert("Thank you for the Payment!");
+    // alert("Thank you for the Payment!");
+    redirect.push('/thq');
+    
   };
 
   return (
