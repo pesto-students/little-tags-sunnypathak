@@ -5,7 +5,7 @@ import "firebase/auth";
 import "firebase/firestore";
 import "firebase/analytics";
 
-1. Firebase configuration
+// 1. Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyBZG7qB9bySnO81pCzY1NF5sXIM-2pdaTo",
   authDomain: "closet-goodies.firebaseapp.com",
