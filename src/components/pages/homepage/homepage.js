@@ -42,7 +42,7 @@ class HomePage extends React.Component {
       <div className="homepage">
         <div className="container">
           <header className="heading">
-            <h2>Closet Goodies</h2>
+            <h2>LITTLE TAGS</h2>
             <h4>Exclusive Wears for Men, Women, Boys and Girls</h4>
           </header>
           <SlideShow />

@@ -119,14 +119,14 @@ class Footer extends React.Component {
           ))}
           {this.renderSocialLinks()}
         </div>
-        <div className="footer-bottom">
+        {/* <div className="footer-bottom">
           &copy; 2020 - Created with{" "}
           <span role="img" aria-labelledby="emoji">
             {" "}
             💙{" "}
           </span>{" "}
           by Shaurya Singhal
-        </div>
+        </div> */}
       </div>
     );
   }

@@ -67,7 +67,7 @@ const Navbar = props => {
             height={`${collapsedProps.height}%`}
           />
           <div className="appname" onClick={() => history.push("/")}>
-            Closet Goodies
+            LITTLE TAGS
           </div>
           {currentUser ? (
             <Link to="#">
