@@ -16,16 +16,6 @@ const firebaseConfig = {
   messagingSenderId: "5364361682",
   appId: "1:5364361682:web:a6b638db218d131d64400b",
   measurementId: "G-15T42MC7T9"
-
-  //default
-  // apiKey: "AIzaSyBZG7qB9bySnO81pCzY1NF5sXIM-2pdaTo",
-  // authDomain: "closet-goodies.firebaseapp.com",
-  // databaseURL: "https://closet-goodies.firebaseio.com",
-  // projectId: "closet-goodies",
-  // storageBucket: "closet-goodies.appspot.com",
-  // messagingSenderId: "776213849902",
-  // appId: "1:776213849902:web:8916fb6893350fada63cbf",
-  // measurementId: "G-YV2CCDR733"
 };
 
 // 2. Initialize Firebase
