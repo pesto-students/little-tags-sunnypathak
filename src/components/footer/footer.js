@@ -22,12 +22,10 @@ class Footer extends React.Component {
       },
       {
         title: "Quick Links >>",
-        values: ["Women", "Men", "Girls", "Boys", "New Closet"],
+        values: ["Women", "Men", "New Closet"],
         links: [
           "/shop/women",
           "/shop/men",
-          "/shop/girls",
-          "/shop/boys",
           "/shop"
         ]
       },
@@ -38,8 +36,8 @@ class Footer extends React.Component {
       },
       {
         title: "Contacts >>",
-        values: ["@shaurya"],
-        links: ["mailto:shauryasinghal84@gmail.com"]
+        values: ["@piratesOfSilliconValey"],
+        links: ["mailto:siliconvalleypiratesof@gmail.com"]
       }
     ]
   };

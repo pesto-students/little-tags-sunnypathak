@@ -7,8 +7,6 @@ import Banners from "./Banners";
 
 import Home1 from "../../../assets/homepage/home1.webp";
 import Home2 from "../../../assets/homepage/home2.webp";
-import Home3 from "../../../assets/homepage/home3.webp";
-import Home4 from "../../../assets/homepage/home4.webp";
 import "./homepage.scss";
 
 class HomePage extends React.Component {
@@ -23,16 +21,6 @@ class HomePage extends React.Component {
         img: Home2,
         link: "/shop/women",
         name: "Women"
-      },
-      {
-        img: Home3,
-        link: "/shop/boys",
-        name: "Boys"
-      },
-      {
-        img: Home4,
-        link: "/shop/girls",
-        name: "Girls"
       }
     ]
   };
@@ -43,7 +31,7 @@ class HomePage extends React.Component {
         <div className="container">
           <header className="heading">
             <h2>LITTLE TAGS</h2>
-            <h4>Exclusive Wears for Men, Women, Boys and Girls</h4>
+            <h4>Exclusive Wears for Men and Women</h4>
           </header>
           <SlideShow />
           {/* <div className="slideshow"></div> */}

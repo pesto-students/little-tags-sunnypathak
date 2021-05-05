@@ -118,20 +118,7 @@ const Navbar = props => {
             >
               WOMEN
             </Link>
-            <Link
-              to="/shop/boys"
-              className={activeLink === "/shop/boys" ? "active" : ""}
-              onClick={() => handleActiveLink("/shop/boys")}
-            >
-              BOYS
-            </Link>
-            <Link
-              to="/shop/girls"
-              className={activeLink === "/shop/girls" ? "active" : ""}
-              onClick={() => handleActiveLink("/shop/girls")}
-            >
-              GIRLS
-            </Link>
+            
             <Link
               to="/shop"
               className={activeLink === "/shop" ? "active" : ""}

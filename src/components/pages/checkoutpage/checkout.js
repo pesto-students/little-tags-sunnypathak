@@ -117,7 +117,7 @@ const CheckoutPage = props => {
               <>
                 <StripeCheckout
                   label="Pay Now via Stripe Payment" // text inside the Stripe button
-                  name="Closet Goodies" // the pop-in header title
+                  name="Little Tags" // the pop-in header title
                   description={`Your Cart Total is Rs.${cartTotal}`} // the pop-in header subtitle
                   shippingAddress
                   billingAddress
