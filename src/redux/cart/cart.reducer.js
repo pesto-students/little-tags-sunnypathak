@@ -10,6 +10,7 @@ const cartReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case cartActionTypes.ADD_TO_CART:
       newCartItems = addToCartHelper(state.cartItems, action.payload);
+      
       localStorage.setItem("cartItems", JSON.stringify(newCartItems));
       return {
         ...state,

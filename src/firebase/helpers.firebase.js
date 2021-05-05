@@ -7,26 +7,16 @@ import "firebase/analytics";
 
 // 1. Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBZG7qB9bySnO81pCzY1NF5sXIM-2pdaTo",
-  authDomain: "closet-goodies.firebaseapp.com",
-  databaseURL: "https://closet-goodies.firebaseio.com",
-  projectId: "closet-goodies",
-  storageBucket: "closet-goodies.appspot.com",
-  messagingSenderId: "776213849902",
-  appId: "1:776213849902:web:8916fb6893350fada63cbf",
-  measurementId: "G-YV2CCDR733"
+
+  apiKey: "AIzaSyBEMSwe_unmpIkDdldKlO7A_9VepKITiqU",
+  authDomain: "little-tags-v1.firebaseapp.com",
+  databaseURL: "https://little-tags-v1-default-rtdb.firebaseio.com",
+  projectId: "little-tags-v1",
+  storageBucket: "little-tags-v1.appspot.com",
+  messagingSenderId: "5364361682",
+  appId: "1:5364361682:web:a6b638db218d131d64400b",
+  measurementId: "G-15T42MC7T9"
 };
-
-
-
-
-
-// const firebaseConfig = {
-//   apiKey: process.env.REACT_APP_API_KEY,
-//   authDomain: process.env.REACT_APP_AUTH_DOMAIN,
-//   projectId: process.env.REACT_APP_PROJECT_ID,
-//   storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
-// };
 
 // 2. Initialize Firebase
 firebase.initializeApp(firebaseConfig);

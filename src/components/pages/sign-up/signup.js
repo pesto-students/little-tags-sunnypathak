@@ -42,8 +42,8 @@ const SignUp = ({
       <div className="signup">
         <div className="container">
           <header className="heading">
-            <h2>Closet Goodies</h2>
-            <h4>Exclusive Wears for Men, Women, Boys and Girls</h4>
+            <h2>Little Tags</h2>
+            <h4>Exclusive Wears for Men and Women</h4>
           </header>
           <div className="additional">
             <div className="left">
@@ -60,7 +60,7 @@ const SignUp = ({
             <div className="right">
               <div className="head">
                 <h4>Create Account</h4>
-                <p>Welcome to Closet Goodies. Hello You?</p>
+                <p>Welcome to Little Tags. Hello You?</p>
               </div>
               <form onSubmit={handleSubmit}>
                 <span className="error">

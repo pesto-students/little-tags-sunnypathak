@@ -16,8 +16,6 @@ const CollapsedNavbar = ({ showNavbar, height }) => {
         <Link to="/">HOME</Link>
         <Link to="/shop/men">MEN</Link>
         <Link to="/shop/women">WOMEN</Link>
-        <Link to="/shop/boys">BOYS</Link>
-        <Link to="/shop/girls">GIRLS</Link>
         <Link to="/shop">NEW CLOSET</Link>
         <Link to="/faq">FAQ</Link>
       </div>

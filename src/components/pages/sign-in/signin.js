@@ -47,8 +47,8 @@ const SignIn = props => {
     <div className="signin">
       <div className="container">
         <header className="heading">
-          <h2>Closet Goodies</h2>
-          <h4>Exclusive Wears for Men, Women, Boys and Girls</h4>
+          <h2>Little Tags</h2>
+          <h4>Exclusive Wears for Men and Women</h4>
         </header>
         <div className="additional">
           <div className="left">
