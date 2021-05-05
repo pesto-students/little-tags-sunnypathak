@@ -47,11 +47,11 @@ class Footer extends React.Component {
   renderSocialLinks = () => {
     return (
       <div className="extra-links social-links">
-        <h4> Follow Me >> </h4>
+        <h4> Follow Me  </h4>
         <ul>
           <li>
             <a
-              href={this.state.githubLink}
+              href="/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -61,7 +61,7 @@ class Footer extends React.Component {
 
           <li>
             <a
-              href={this.state.facebookLink}
+              href="/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -70,7 +70,7 @@ class Footer extends React.Component {
           </li>
           <li>
             <a
-              href={this.state.twitterLink}
+              href="/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -79,7 +79,7 @@ class Footer extends React.Component {
           </li>
           <li>
             <a
-              href={this.state.linkedinLink}
+              href="/"
               target="_blank"
               rel="noopener noreferrer"
             >
