@@ -8,14 +8,16 @@ import {clearCart} from '../../../redux/cart/cart.actions'
 
 function Thankyou(props) {
     const redirect = useHistory();
-    const {clearCartAsync} = props;
+    const {clearCartAsync,cartItems}= props;
 
     useEffect(()=>{
-        console.log("below is cart")
-        console.log(JSON.parse(localStorage.getItem("cartItems")));
-        localStorage.setItem("cartItems",JSON.stringify([]));
-        console.log(JSON.parse(localStorage.getItem("cartItems")));
-        clearCartAsync()
+        // console.log("below is cart")
+        // console.log(JSON.parse(localStorage.getItem("cartItems")));
+        if(cartItems){
+            clearCartAsync()
+        }
+      
+        
     })
 
 
