@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
 import CollapsedNavbar from "./CollapsedNavbar";
+import {FaUser} from "react-icons";
 // action creator import
 import { signoutUserAsync } from "../../redux/user/user.actions";
 
@@ -17,8 +18,11 @@ const UserProfile = ({ user, signoutUserAsync, history }) => {
   const [show, setShow] = useState(false);
   return (
     <div className="userProfile" onClick={() => history.push("/profile")}>
+      <div className='username'>
+      {user.displayName}
+      </div>
       <div className="username" onClick={() => setShow(!show)}>
-        {user.displayName} <span>&#9663;</span>
+         <span>&#9663;</span>
       </div>
       <div
         className="dropdown"
