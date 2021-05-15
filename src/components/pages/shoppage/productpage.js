@@ -9,14 +9,16 @@ const getItemFromURL = (data, collectionName, title, itemId) => {
   if (!collections) return null;
 
   const collection = collections.filter(
-    collection => collection.title.toLowerCase() === title
+    (collection) => collection.title.toLowerCase() === title
   )[0];
   if (!collection) return null;
 
   const collectionItems = collection["items"];
   if (!collectionItems) return null;
 
-  const itemArray = collectionItems.filter(item => String(item.id) === itemId);
+  const itemArray = collectionItems.filter(
+    (item) => String(item.id) === itemId
+  );
   if (itemArray.length === 0) return null;
   return itemArray[0];
 };
@@ -25,7 +27,7 @@ const throwError = () => {
   throw Error("404 - Page Not Found");
 };
 
-const ProductPage = props => {
+const ProductPage = (props) => {
   const { collectionName, title, itemId } = props.match.params;
   if (!props.data) {
     return <></>;
@@ -75,7 +77,6 @@ const ProductPage = props => {
                   <li>Made From 100% Premium Cotton.</li>
                   <li>Fit: Regular Fit</li>
                   <li>Warranty: 3 months</li>
-                  <li>Fit: Regular Fit</li>
                   <li>Care Instructions: Hand Wash</li>
                   <li>
                     Colour Declaration : Placement and color of print may vary
@@ -100,12 +101,12 @@ const ProductPage = props => {
   );
 };
 
-const mapStateToProps = state => ({
-  data: state.data.data
+const mapStateToProps = (state) => ({
+  data: state.data.data,
 });
 
-const mapDispatchToProps = dispatch => ({
-  addToCart: item => dispatch(addToCart(item))
+const mapDispatchToProps = (dispatch) => ({
+  addToCart: (item) => dispatch(addToCart(item)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProductPage);

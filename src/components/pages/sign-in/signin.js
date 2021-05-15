@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 // action creator Import
 import {
   googleSignInAsync,
-  localSignInAsync
+  localSignInAsync,
 } from "../../../redux/user/user.actions";
 
 // Style Import
@@ -12,10 +12,10 @@ import { ReactComponent as Mockuser } from "../../../assets/mockuser.svg";
 import { ReactComponent as Spinner } from "../../../assets/spinner.svg";
 import "./signin.scss";
 
-const SignIn = props => {
+const SignIn = (props) => {
   const [userCredentials, setUserCredentials] = useState({
     email: "",
-    password: ""
+    password: "",
   });
 
   const { email, password } = userCredentials;
@@ -25,20 +25,20 @@ const SignIn = props => {
     isSigning,
     error,
     successSigninMessage,
-    isSigningGoogle
+    isSigningGoogle,
   } = props;
 
-  const handleChange = e => {
+  const handleChange = (e) => {
     const { value, name } = e.target;
     setUserCredentials({
       ...userCredentials,
       [name]: value,
       error: null,
-      successSigninMessage: null
+      successSigninMessage: null,
     });
   };
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     localSignInAsync(email, password);
   };
@@ -131,13 +131,18 @@ const SignIn = props => {
                   <Spinner />
                 </button>
               ) : (
-                <button
-                  type="button"
-                  onClick={googleSignInAsync}
-                  className="form-button googlebtn"
-                >
-                  Google Sign In
-                </button>
+                <div className="google-btn" onClick={googleSignInAsync}>
+                  <div className="google-icon-wrapper">
+                    <img
+                      className="google-icon"
+                      src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
+                      alt="google-logo"
+                    />
+                  </div>
+                  <p className="btn-text">
+                    <b>Sign in with google</b>
+                  </p>
+                </div>
               )}
             </form>
           </div>
@@ -147,17 +152,17 @@ const SignIn = props => {
   );
 };
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   error: state.user.signinError,
   successSigninMessage: state.user.successSigninMessage,
   isSigning: state.user.isSigning,
-  isSigningGoogle: state.user.isSigningGoogle
+  isSigningGoogle: state.user.isSigningGoogle,
 });
 
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = (dispatch) => ({
   googleSignInAsync: () => dispatch(googleSignInAsync()),
   localSignInAsync: (email, password) =>
-    dispatch(localSignInAsync(email, password))
+    dispatch(localSignInAsync(email, password)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(SignIn);
