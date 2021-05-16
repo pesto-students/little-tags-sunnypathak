@@ -21,8 +21,8 @@ const UserProfile = ({ user, signoutUserAsync, history }) => {
       <div className='username'>
       {user.displayName}
       </div>
-      <div className="username" onClick={() => setShow(!show)}>
-         <span>&#9663; </span>
+      <div className="username" >
+         <span  onClick={() => setShow(!show)}>&#9663; </span>
       </div>
       <div
         className="dropdown"
