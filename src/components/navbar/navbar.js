@@ -22,7 +22,7 @@ const UserProfile = ({ user, signoutUserAsync, history }) => {
       {user.displayName}
       </div>
       <div className="username" onClick={() => setShow(!show)}>
-         <span>&#9663; <FaUser/></span>
+         <span>&#9663; </span>
       </div>
       <div
         className="dropdown"
