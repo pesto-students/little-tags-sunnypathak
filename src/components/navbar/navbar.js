@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
 import CollapsedNavbar from "./CollapsedNavbar";
-import {FaUser} from "react-icons/fa";
+
 // action creator import
 import { signoutUserAsync } from "../../redux/user/user.actions";
 
