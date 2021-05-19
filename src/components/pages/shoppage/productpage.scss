@@ -6,7 +6,7 @@
 
   .container {
     * {
-      font-family: monospace;
+      font-family: sans-serif;
     }
     width: 70%;
     min-height: 63vh;
@@ -54,7 +54,7 @@
             text-align: left;
             text-transform: initial;
             font-size: larger;
-            font-family: monospace;
+            font-family: sans-serif;
             span {
               color: #f56618;
               font-weight: 600;
