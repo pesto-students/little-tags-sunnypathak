@@ -37,14 +37,14 @@ const App = ({ checkUserAsync, currentUser, setCartItemsFromLocalStorage }) => {
       <Navbar user={currentUser} />
       <Errorboundary user={currentUser}>
         <Switch>
-          <Route exact path="/checkout" component={Checkout} />
-          <Route exact path="/signin">
+          <Route  path="/checkout" component={Checkout} />
+          <Route  path="/signin">
             {currentUser ? <Redirect to="/" /> : <Signin />}
           </Route>
-          <Route exact path="/signup">
+          <Route  path="/signup">
             {currentUser ? <Redirect to="/" /> : <Signup />}
           </Route>
-          <Route exact path="/profile">
+          <Route  path="/profile">
             {!currentUser ? <Redirect to="/" /> : <Profile />}
           </Route>
 
@@ -52,7 +52,7 @@ const App = ({ checkUserAsync, currentUser, setCartItemsFromLocalStorage }) => {
           <Route path="/faq" component={HomePage} />
           <Route  path="/thq"  component={Thankyou} />
           <Route path="/contact" component={HomePage} />
-          <Route exact path="/" component={HomePage} />
+          <Route  path="/" component={HomePage} />
           <Route path="/" render={throwError} />
           
             
