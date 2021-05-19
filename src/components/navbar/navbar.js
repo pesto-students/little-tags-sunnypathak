@@ -17,12 +17,14 @@ import { ReactComponent as MockUser } from "../../assets/mockuser.svg";
 const UserProfile = ({ user, signoutUserAsync, history }) => {
   const [show, setShow] = useState(false);
   return (
-    <div className="userProfile" onClick={() => history.push("/profile")}>
-      <div className='username'>
-      {user.displayName}
-      </div>
-      <div className="username" >
-         <span  onClick={() => setShow(!show)}>&#9663; </span>
+    <div className="userProfile">
+      <div className="usr">
+        <div className="username" onClick={() => history.push("/profile")}>
+          {user.displayName}
+        </div>
+        <div className="user-dropdown">
+          <span onClick={() => setShow(!show)}>&#9663; </span>
+        </div>
       </div>
       <div
         className="dropdown"
@@ -35,22 +37,22 @@ const UserProfile = ({ user, signoutUserAsync, history }) => {
   );
 };
 
-const Navbar = props => {
+const Navbar = (props) => {
   const { currentUser, signoutUserAsync, location, history } = props;
   const [activeLink, setActiveLink] = useState(`${location.pathname}`);
   const [collapsedProps, setCollapsedProps] = useState({
     isCollapsedNavOpen: false,
-    height: 0
+    height: 0,
   });
 
-  const handleActiveLink = item => {
+  const handleActiveLink = (item) => {
     setActiveLink(item);
   };
 
-  const showNavbar = isOpen => {
+  const showNavbar = (isOpen) => {
     const obj = {
       isCollapsedNavOpen: isOpen,
-      height: isOpen ? 100 : 0
+      height: isOpen ? 100 : 0,
     };
     setCollapsedProps(obj);
   };
@@ -122,7 +124,7 @@ const Navbar = props => {
             >
               WOMEN
             </Link>
-            
+
             <Link
               to="/shop"
               className={activeLink === "/shop" ? "active" : ""}
@@ -144,12 +146,12 @@ const Navbar = props => {
   );
 };
 
-const mapStatetoProps = state => ({
-  currentUser: state.user.currentUser
+const mapStatetoProps = (state) => ({
+  currentUser: state.user.currentUser,
 });
 
-const mapDispatchToProps = dispatch => ({
-  signoutUserAsync: () => dispatch(signoutUserAsync())
+const mapDispatchToProps = (dispatch) => ({
+  signoutUserAsync: () => dispatch(signoutUserAsync()),
 });
 
 export default withRouter(connect(mapStatetoProps, mapDispatchToProps)(Navbar));

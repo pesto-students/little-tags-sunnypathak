@@ -60,10 +60,17 @@
           pointer-events: none;
         }
 
+        .usr {
+          display: flex;
+        }
+
         .userProfile {
           position: relative;
           .username {
             color: #939393;
+          }
+
+          .user-dropdown {
             span {
               font-size: larger;
               color: #939393;
